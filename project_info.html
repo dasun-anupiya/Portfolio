@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details | Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <style>
+        .project-detail-section {
+            min-height: 100vh;
+            padding: 4rem 2rem;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .project-header {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .project-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .project-header p {
+            color: #4ecdc4;
+            font-size: 1.2rem;
+        }
+
+        .project-content {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-info {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+        }
+
+        .project-image {
+            background: rgba(0, 0, 0, 0.7);
+            padding: 2rem;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .project-image img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .tech-stack {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .tech-tag {
+            background: rgba(78, 205, 196, 0.2);
+            color: #4ecdc4;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+        }
+
+        .project-features {
+            margin-top: 2rem;
+        }
+
+        .project-features h3 {
+            color: #4ecdc4;
+            margin-bottom: 1rem;
+        }
+
+        .project-features ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .project-features li {
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .project-features li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: #4ecdc4;
+        }
+
+        .back-button {
+            position: fixed;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #4ecdc4;
+            color: #4ecdc4;
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .back-button:hover {
+            background: rgba(78, 205, 196, 0.2);
+            transform: translateX(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .project-content {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" class="back-button">
+        <i class="fas fa-arrow-left"></i> Back to Portfolio
+    </a>
+
+    <!-- Smart Fan Project -->
+    <section id="smart-fan" class="project-detail-section">
+        <div class="project-header">
+            <h1>Smart Fan With Face Recognition</h1>
+            <p>IoT-based intelligent fan control system</p>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <h2>Project Overview</h2>
+                <p>An innovative IoT-based smart fan system that uses facial recognition technology to automatically adjust fan settings based on user preferences and environmental conditions.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">OpenCV</span>
+                    <span class="tech-tag">Arduino</span>
+                    <span class="tech-tag">IoT</span>
+                </div>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Real-time facial recognition for user identification</li>
+                        <li>Automatic fan speed adjustment based on user preferences</li>
+                        <li>Temperature and humidity monitoring</li>
+                        <li>Mobile app integration for remote control</li>
+                        <li>Energy consumption optimization</li>
+                    </ul>
+                </div>
+
+                <div class="project-features">
+                    <h3>Technical Implementation</h3>
+                    <ul>
+                        <li>Face detection using OpenCV and DNN</li>
+                        <li>Arduino-based fan control system</li>
+                        <li>Raspberry Pi for processing and connectivity</li>
+                        <li>MQTT protocol for IoT communication</li>
+                        <li>Flask backend for API endpoints</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="media/images/smart-fan.jpg" alt="Smart Fan Project">
+            </div>
+        </div>
+    </section>
+
+    <!-- YUFI Project -->
+    <section id="yufi" class="project-detail-section">
+        <div class="project-header">
+            <h1>YUFI Online Learning Platform</h1>
+            <p>Comprehensive e-learning solution</p>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <h2>Project Overview</h2>
+                <p>A comprehensive e-learning platform designed to provide interactive and engaging educational experiences for students and teachers.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">Node.js</span>
+                    <span class="tech-tag">MongoDB</span>
+                    <span class="tech-tag">Express</span>
+                </div>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Interactive video lessons and quizzes</li>
+                        <li>Real-time progress tracking</li>
+                        <li>Discussion forums and chat system</li>
+                        <li>Course management system</li>
+                        <li>Assessment and grading tools</li>
+                    </ul>
+                </div>
+
+                <div class="project-features">
+                    <h3>Technical Implementation</h3>
+                    <ul>
+                        <li>React frontend with Redux state management</li>
+                        <li>Node.js backend with Express framework</li>
+                        <li>MongoDB database for flexible data storage</li>
+                        <li>JWT authentication system</li>
+                        <li>WebSocket for real-time features</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="media/images/yufi.jpg" alt="YUFI Platform">
+            </div>
+        </div>
+    </section>
+
+    <!-- Crypsys Project -->
+    <section id="crypsys" class="project-detail-section">
+        <div class="project-header">
+            <h1>Crypsys Website</h1>
+            <p>Modern cybersecurity services platform</p>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <h2>Project Overview</h2>
+                <p>A modern and responsive website showcasing cybersecurity services and solutions, featuring a clean design and intuitive user interface.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">HTML5</span>
+                    <span class="tech-tag">CSS3</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">PHP</span>
+                </div>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Responsive design for all devices</li>
+                        <li>Interactive service showcase</li>
+                        <li>Contact form with validation</li>
+                        <li>Blog section for security tips</li>
+                        <li>Client testimonials</li>
+                    </ul>
+                </div>
+
+                <div class="project-features">
+                    <h3>Technical Implementation</h3>
+                    <ul>
+                        <li>Modern CSS with Flexbox and Grid</li>
+                        <li>JavaScript for interactive elements</li>
+                        <li>PHP backend for form handling</li>
+                        <li>SEO optimization</li>
+                        <li>Performance optimization</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="media/images/crypsys.jpg" alt="Crypsys Website">
+            </div>
+        </div>
+    </section>
+
+    <!-- Ecommerce Project -->
+    <section id="ecommerce" class="project-detail-section">
+        <div class="project-header">
+            <h1>Ecommerce Platform</h1>
+            <p>Full-featured online shopping solution</p>
+        </div>
+        <div class="project-content">
+            <div class="project-info">
+                <h2>Project Overview</h2>
+                <p>A comprehensive e-commerce platform with secure payment integration, user-friendly interface, and advanced features for both customers and administrators.</p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">C#</span>
+                    <span class="tech-tag">.NET</span>
+                    <span class="tech-tag">SQL Server</span>
+                    <span class="tech-tag">React</span>
+                </div>
+
+                <div class="project-features">
+                    <h3>Key Features</h3>
+                    <ul>
+                        <li>Secure payment gateway integration</li>
+                        <li>User authentication and authorization</li>
+                        <li>Product catalog with search and filters</li>
+                        <li>Shopping cart functionality</li>
+                        <li>Admin dashboard for management</li>
+                    </ul>
+                </div>
+
+                <div class="project-features">
+                    <h3>Technical Implementation</h3>
+                    <ul>
+                        <li>.NET Core backend API</li>
+                        <li>React frontend with TypeScript</li>
+                        <li>SQL Server database</li>
+                        <li>Stripe payment integration</li>
+                        <li>JWT authentication</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="project-image">
+                <img src="media/images/ecommerce.jpg" alt="Ecommerce Platform">
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script>
+        // Smooth scroll to section based on URL hash
+        document.addEventListener('DOMContentLoaded', function() {
+            const hash = window.location.hash;
+            if (hash) {
+                const element = document.querySelector(hash);
+                if (element) {
+                    element.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+    </script>
+</body>
+</html> 

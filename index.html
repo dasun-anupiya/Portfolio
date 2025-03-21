@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Solar System</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="cursor"></div>
+    <div class="cursor-dot"></div>
+
+    <!-- Sound control -->
+    <div class="sound-control">
+        <button id="muteButton" class="mute-button">
+            <i class="fas fa-volume-up"></i>
+        </button>
+    </div>
+
+    <!-- Audio elements -->
+    <audio id="bgm" loop>
+        <source src="media/sounds/bgm.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="textSound">
+        <source src="media/sounds/text.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="initial-instruction">
+        <h1>Scroll to Navigate Through the Universe</h1>
+        <p class="headphone-note"><i class="fas fa-headphones"></i> Use headphones for the best experience</p>
+        <div class="scroll-icon">
+            <i class="fas fa-mouse"></i>
+            <div class="scroll-animation"></div>
+        </div>
+    </div>
+
+    <div id="universe-container"></div>
+
+    <div class="content-sections">
+        <section id="intro" class="section">
+            <div class="content-left">
+                <h1 class="name">Dasun Anupiya</h1>
+                <h2 class="subtitle">Software Developper, IoT Developer, Network Engineer</h2>
+                <p class="bio">A passionate student of University of Colombo Faculty of Technology. Seeks to learn new technologies and implement them in real-world applications.</p>
+            </div>
+        </section>
+
+        <section id="about" class="section">
+            <div class="content-left">
+                <h2>About Me</h2>
+                <p>I am Dasun Anupiya Studies Instrumentation and Automation Technology in University of Colombo.
+                    I am also passionate about Software Development, Web Development, and AI technologies.
+                </p>
+            </div>
+            <div class="content-right">
+                <h3>Personal Details</h3>
+                <ul class="animated-list">
+                    <li><i class="fas fa-user"></i> Name: Dasun Anupiya Wanasinghe</li>
+                    <li><i class="fas fa-graduation-cap"></i> University: University of Colombo</li>
+                    <li><i class="fas fa-book"></i> Field of Study: Instrumentation and Automation Technology</li>
+                    <li><i class="fas fa-map-marker-alt"></i> Location: Dambulla, Sri Lanka</li>
+                    <li><i class="fas fa-envelope"></i> Email: dasun.anupiya@gmail.com</li>
+                    <li><i class="fas fa-phone"></i> Phone: +94 76 887 5438</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="qualifications" class="section">
+            <div class="content-left">
+                <h2>Education</h2>
+                <p>My academic journey and achievements</p>
+            </div>
+            <div class="content-right">
+                <ul class="animated-list">
+                    <li class="qualification-item">
+                        <div class="qualification-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            BET Hons Instrumentation and Automation
+                        </div>
+                        <div class="qualification-details">
+                            <p>University of Colombo</p>
+                            <p>2022 - Present</p>
+                        </div>
+                    </li>
+                    <li class="qualification-item">
+                        <div class="qualification-title">
+                            <i class="fas fa-certificate"></i>
+                            Higher Diploma in Network Engineering and Cyber Security
+                        </div>
+                        <div class="qualification-details">
+                            <p>Cardiff Metropolitan University</p>
+                            <p>2022</p>
+                            <p>Merit</p>
+                        </div>
+                    </li>
+                    <li class="qualification-item">
+                        <div class="qualification-title">
+                            <i class="fas fa-school"></i>
+                            GCE Advanced Level
+                        </div>
+                        <div class="qualification-details">
+                            <p>Rangiri Dambulla National School</p>
+                            <p>2021</p>
+                            <p>Engineering technology B</p>
+                            <p>Science for Technology A</p>
+                            <p>Information and Communication Technology A</p>
+                        </div>
+                    </li>
+                    <li class="qualification-item">
+                        <div class="qualification-title">
+                            <i class="fas fa-school"></i>
+                            GCE Ordinary Level
+                        </div>
+                        <div class="qualification-details">
+                            <p>Rangiri Dambulla National School</p>
+                            <p>2018</p>
+                            <p>Passed with 6As 2Bs and 1S</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="content-left">
+                <h2>Skills</h2>
+                <p>Technical expertise and capabilities</p>
+            </div>
+            <div class="content-right">
+                <div class="skills-category">
+                    <h3><i class="fas fa-code"></i> Programming Languages</h3>
+                    <ul class="animated-list">
+                        <li class="skill-item">
+                            <div class="skill-title">C#</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 90%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">.NET</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">Python</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-laptop-code"></i> Development</h3>
+                    <ul class="animated-list">
+                        <li class="skill-item">
+                            <div class="skill-title">Web Development</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 85%"></div>
+                            </div>
+                        </li>
+                        <li class="skill-item">
+                            <div class="skill-title">Mobile App Development</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 75%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="skills-category">
+                    <h3><i class="fas fa-palette"></i> Design</h3>
+                    <ul class="animated-list">
+                        <li class="skill-item">
+                            <div class="skill-title">Graphic Design</div>
+                            <div class="skill-bar">
+                                <div class="skill-progress" style="width: 80%"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="content-left">
+                <h2>Projects</h2>
+                <p>Featured works and achievements</p>
+            </div>
+            <div class="content-right">
+                <ul class="animated-list">
+                    <li class="project-item">
+                        <div class="project-title">
+                            <i class="fas fa-robot"></i>
+                            Smart Fan With Face Recognition
+                        </div>
+                        <div class="project-description">
+                            <p>An IoT-based smart fan system that uses facial recognition to automatically adjust settings based on user preferences.</p>
+                            <a href="project_info.html#smart-fan" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="project-title">
+                            <i class="fas fa-graduation-cap"></i>
+                            YUFI Online Learning Platform
+                        </div>
+                        <div class="project-description">
+                            <p>A comprehensive e-learning platform designed to provide interactive and engaging educational experiences.</p>
+                            <a href="project_info.html#yufi" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="project-title">
+                            <i class="fas fa-globe"></i>
+                            Crypsys Website
+                        </div>
+                        <div class="project-description">
+                            <p>A modern and responsive website showcasing cybersecurity services and solutions.</p>
+                            <a href="project_info.html#crypsys" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                    <li class="project-item">
+                        <div class="project-title">
+                            <i class="fas fa-shopping-cart"></i>
+                            Ecommerce Platform
+                        </div>
+                        <div class="project-description">
+                            <p>A full-featured e-commerce platform with secure payment integration and user-friendly interface.</p>
+                            <a href="project_info.html#ecommerce" class="learn-more">Learn More <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="content-left">
+                <h2>Work Experience</h2>
+                <p>Professional journey and roles</p>
+            </div>
+            <div class="content-right">
+                <ul class="animated-list">
+                    <li class="experience-item">
+                        <div class="experience-title">
+                            <i class="fas fa-code"></i>
+                            Freelance Software Developer
+                        </div>
+                        <div class="experience-details">
+                            <p class="experience-period">2023 - Present</p>
+                            <p class="experience-description">Working as an independent software developer, delivering high-quality solutions across various technologies and platforms.</p>
+                            <div class="experience-skills">
+                                <span class="skill-tag">C#</span>
+                                <span class="skill-tag">.NET</span>
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Web Development</span>
+                                <span class="skill-tag">Mobile Development</span>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="contact" class="section">
+            <div class="content-left">
+                <h2>Contact & Social</h2>
+                <p>Let's connect and create something amazing</p>
+            </div>
+            <div class="content-right">
+                <ul class="social-links animated-list">
+                    <li><a href="https://github.com/dasun-anupiya"><i class="fab fa-github"></i> GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/dasun-anupiya-71b64b229/"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    <li><a href="https://x.com/AnupiyaDasun?t=pG473HhBRPtKvScjjPae9w&s=08"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="https://www.instagram.com/dasun_anupiya_/"><i class="fab fa-instagram"></i> Instagram</a></li>
+                    <li><a href="mailto:dasun.anupiya@gmail.com"><i class="fas fa-envelope"></i> Email</a></li>
+                </ul>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
